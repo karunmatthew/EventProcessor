@@ -14,7 +14,6 @@ import backtype.storm.topology.TopologyBuilder;
 public class KafkaSingleNodeTopology {
 	public static void main(String[] args) throws AlreadyAliveException,
 			InvalidTopologyException {
-		
 		ZkHosts zkHosts = new ZkHosts("localhost:2181");
 		SpoutConfig kafkaConfig = new SpoutConfig(zkHosts, "words_topic", "",
 				"id7");
